@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="table/jquery.table2excel.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $("#table").table2excel({
+                    /*exclude:"Exl",*/
+                    name:"Excel Document Name",
+                    filename:"123",
+                    exclude_img:true,
+                    exclude_links:true,
+                    exclude_inputs:true
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<table id="table" border="2px" align="center" bgcolor="#7cfc00">
+    <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>c</td>
+        <td>d</td>
+        <td>e</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+
+    <tr>
+        <td>dsa</td>
+        <td>dd</td>
+        <td>ssdsd</td>
+        <td>wfwef</td>
+        <td>wfwef</td>
+    </tr>
+
+    <tr>
+        <td>rthrth</td>
+        <td>thththrh</td>
+        <td>rhrthrthr</td>
+        <td>rhrthrhrh</td>
+        <td>rhrthrth</td>
+    </tr>
+</table>
+
+<button id="btn" class="btn btn-primary">export to excel</button>
+</body>
+</html>
