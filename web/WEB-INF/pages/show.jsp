@@ -118,7 +118,7 @@
     <c:if test="${!empty requestScope.users}"></c:if>--%>
     <!-- <button class="btn btn-default" id="btnExport">批量导出</button> -->
     <table id="tb_departments" class="table table-hover">
-    <tr>
+    <%--<tr>
     <td class="active">居住地</td>
     <td class="success">电话</td>
     <td class="warning">姓名</td>
@@ -126,7 +126,7 @@
     <td class="info">邮箱</td>
     <td class="danger">学校</td>
 
-    </tr>
+    </tr>--%>
    <%-- <c:forEach items="${requestScope.users }" var="user">
     <tr>
     <td class="active">${user.address }</td>
